@@ -34,3 +34,29 @@ git rebase main rebases the current branch onto main.
 Downloads remote commits without merging them.
 git fetch origin downloads changes from origin.
 git fetch upstream main fetches upstream's main branch.
+
+9. git add
+Stages files for the next commit.
+git add filename stages one file.
+git add . stages changes in the current directory and below.
+
+10. git status
+Shows the current branch and the state of changed files.
+git status -s displays a shorter summary.
+
+11. git log
+Displays the commit history.
+git log --oneline shows a compact history.
+git log -5 shows the five most recent commits.
+
+12. git diff
+Shows differences between versions of files.
+git diff shows unstaged changes.
+git diff --staged shows staged changes.
+
+ADDITIONAL GIT PUSH OPTION
+
+git push -u origin lesson2
+Pushes the lesson2 branch to origin and sets its upstream tracking branch.
+
+After this, git push can be used without specifying the remote and branch.
