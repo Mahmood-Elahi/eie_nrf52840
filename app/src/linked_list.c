@@ -119,7 +119,7 @@ void ll_remove_data_at_cursor(linked_list_t* linked_list) {
   // cursor should now be pointing to the element after the cursor and
   // vice versa
   if (before_cursor != NULL) {
-    // Hint something is missing here:
+    before_cursor->next = after_cursor;
 
     // Update the cursor in the linked list to point to the element that
     // was before the cursor
